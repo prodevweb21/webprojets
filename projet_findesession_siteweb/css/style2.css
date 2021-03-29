@@ -1,0 +1,88 @@
+
+#zonee {
+  
+    background-image: url("../image/desertsahara.jpg");
+    min-height: 100rem;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+  }
+
+
+  #bouton {
+    text-align: center;
+    padding: 3rem;
+
+          
+  }
+
+  h2, p{
+
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: bold;
+    font-size: 1,25vw;
+  }
+
+
+h5{
+    text-align: center;
+    padding: 2rem;
+    font-style: italic;
+
+}
+
+#z2{
+
+    background-color: white;
+    padding: 5rem;
+   }
+
+#z3{
+
+    padding: 2rem;
+}
+h4{
+
+    text-align: center;
+    padding: 6rem;
+    font-style: italic;
+
+}
+
+h3{
+
+        text-align: center;
+}
+
+
+
+h6{
+
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: darkblue;
+
+}
+
+i{
+    font-size: 2rem;
+    color: black;
+    padding: 1rem ;
+}
+
+hr{
+        
+    background: white;
+    height: 2rem;
+    border-style: none;   
+}
+
+.card{
+
+    padding: 2rem;
+    align-items: center;
+}
+footer{
+    padding: 5rem;
+}

@@ -1,0 +1,224 @@
+<!--index.html-->
+<!--Programmé par : Rachida-->
+<!--Dernière modification : 28/03/2021-->
+
+<!DOCTYPE html>
+<html lang="fr-ca">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="bootstrap-4.5.3-dist/css/bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="css/style2.css">
+    <link rel="icon" href="image/boussole.jpg.crdownload"/>
+</head>
+
+<body>
+
+
+    <!--Menu entête-->
+
+
+    <section> 
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                
+                <div class="col-2"><img src="image/autourdumonde.jpg" class="img-fluid" alt="logo" width="70rem" height="70rem"></div>
+    
+                
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
+                        aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                        <i class="fas fa-suitcase"></i>
+                </button>
+    
+                <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                    <div class="navbar-nav mx-auto navbar-light bg-light">
+                        <a class="nav-item nav-link active" href="index.html">Croisières<span class="sr-only">(current)</span></a>
+                        <a class="nav-item nav-link " href="monument.html">Monument historiques</a>
+                        <a class="nav-item nav-link" href="desert.html">Désert</a>
+                        <a class="nav-item nav-link" href="monument.html">Formulaires</a>
+                        <a class="nav-item nav-link" href="monument.html">Réservation</a>
+                        <a class="nav-item nav-link" href="#promo">Promotion</a>
+                        <a class="nav-item nav-link" href="#covid">COVID-19</a>
+                        <a class="nav-item nav-link active" href="#number">Nous contacter</a>
+                    </div>
+                </div>
+    </section>
+
+
+
+    
+    <!-- Zone 1 -->
+        <section>
+                <div id="zonee" class="container-fluid">
+                    <div class="row"></div>
+                </div>
+        </section>
+    
+        <br><br>
+                
+
+<!-- Zone 2 -->
+    <section>       
+    
+        <button id="bouton" type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
+            Catalogue des souvenirs! Cliquer ici.
+        </button>
+           <div class="modal" tabindex="-1" role="dialog" id="exampleModal">
+                <div class="modal-dialog modal-lg" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title">Souvenirs</h5>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span></button></div>
+                                        <div class="modal-body"><h1>Souvenirs de nos voyageurs</h1></div>
+                                            <div id="myCarousel" class="carousel slide" data-ride="carousel">
+                                                <ul class="carousel-indicators">
+                                                    <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                                                    <li data-target="#myCarousel" data-slide-to="1"></li>
+                                                    <li data-target="#myCarousel" data-slide-to="2"></li>
+                                                </ul>
+                                    
+                                                <div class="carousel-inner">
+                                                <div class="carousel-item active">
+                                                    <img class="img-fluid" src="image/pexels-rachel-claire-4577674.jpg" alt="Photo voyageurs" width="1100" height="200"></div>
+                                                <div class="carousel-item">
+                                                <img class="img-fluid" src="image/pexels-jose-aragones-3884710.jpg" alt="Photo voyageurs" width="1100" height="500"></div>
+                                                <div class="carousel-item">
+                                                <img class="img-fluid" src="image/pexels-roca-no-mundo-3323236.jpg" alt="Photo voyageurs" width="1100" height="500"></div>
+                                                </div>
+                                                
+                                    
+                                                <a class="carousel-control-prev" href="#myCarousel" data-slide="prev"><span class="carousel-control-prev-icon"></span></a>
+                                                <a class="carousel-control-next" href="#myCarousel" data-slide="next"><span class="carousel-control-next-icon"></span></a>
+                                               </div>
+                                                </div>
+                                                     <div class="modal-footer">
+                                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </section>
+    <br><br>
+
+
+
+
+<!-- Zone 3 -->
+    <div id="z3" class="container-fluid"> 
+        <div class="row text-center">
+            <div class="col-lg-3 col-md-6 col-sm-2" class="img-fluid"><img src="image/pexels-alex-azabache-3264722.jpg" alt="chute" width="300rem" height="300rem"></div>
+            <div class="col-lg-3 col-md-6 col-sm-2" class="img-fluid"><img src="image/pexels-taryn-elliott-4405241.jpg" alt="chute" width="300rem" height="300rem"></div>
+            <div class="col-lg-3 col-md-6 col-sm-2" class="img-fluid"><img src="image/pexels-mario-cuadros-2653168.jpg" alt="chute" width="300rem" height="300rem"></div>
+            <div class="col-lg-3 col-md-6 col-sm-2" class="img-fluid"><img src="image/pexels-syed-hasan-mehdi-815880.jpg" alt="chute" width="300rem" height="300rem"></div>
+
+        </div>
+    </div>
+
+    <hr>
+
+<!-- Zone 4 -->
+        <section>
+
+            <div class="jumbotron jumbotron-fluid"><a id="covid"></a>
+                <h2 class="display-4">Précautions voyageurs</h2>
+                <hr class="my-4">
+                <p>Demeurez informez de la situation concernant la COVID-19 dans la région où vous vous trouvez, 
+                    prenez des dispositions et suivez les conseils de la santé publique locale.
+                    Isolez-vous pendant 14 jours si vous présentez des symptômes de la COVID-19, 
+                    même s'ils sont légers. Si vous pensez être atteint de la COVID-19, 
+                    suivez les conseils de la santé publique locale concernant l'obtention de soins.
+                    Sachez où obtenir des soins médicaux, y compris un test de dépistage de la COVID-19.
+                    Portez, de façon appropriée, un masque non médical bien conçu et bien ajusté, lorsque cela est recommandés</p>
+                <p class="lead">
+                  <a class="btn btn-primary btn-lg" href="#number" role="button">Contacter votre agence</a>
+                </p>
+              </div>
+
+    <div class="container-fluid">
+        <div class="row"><a id="promo"></a>   
+            <div class="col-lg-3 col-md-6 col-sm-2"> 
+              <div class="card" style="width: 18rem;">
+                <img class="card-img-top" src="image/promotion1.jpg" alt="Card image cap" width="50rem" height="150rem">
+                <div class="card-body">
+                  <h5 class="card-title">Votre déstination notre vision</h5>
+                  <p class="card-text">Promotion</p>
+                  <a href="monument.html" class="btn btn-primary">Réserver</a>
+                </div>
+            </div>
+        </div>
+    
+
+        <div class="col-lg-3 col-md-6 col-sm-2">
+            <div class="card" style="width: 18rem;">
+                  <img class="card-img-top" src="image/promotion2.jpg" alt="Card image cap" width="50rem" height="150rem">
+                  <div class="card-body">
+                    <h5 class="card-title">Votre déstination notre vision</h5>
+                    <p class="card-text">Promotion</p>
+                    <a href="monument.html" class="btn btn-primary">Réserver</a>
+                  </div>
+                </div>
+        </div>
+
+        <div class="col-lg-3 col-md-6 col-sm-2">
+                <div class="card" style="width: 18rem;">
+                      <img class="card-img-top" src="image/promotion3.jpg" alt="Card image cap" width="50rem" height="150rem">
+                      <div class="card-body">
+                        <h5 class="card-title">Votre déstination notre vision</h5>
+                        <p class="card-text">Promotion</p>
+                        <a href="monument.html" class="btn btn-primary">Réserver</a>
+                      </div>
+                    </div>
+                </div>
+
+        <div class="col-lg-3 col-md-6 col-sm-2">
+                    <div class="card" style="width: 18rem;">
+                          <img class="card-img-top" src="image/promotion4.jpg" alt="Card image cap" width="50rem" height="150rem">
+                          <div class="card-body">
+                            <h5 class="card-title">Votre déstination notre vision</h5>
+                            <p class="card-text">Promotion</p>
+                            <a href="monument.html" class="btn btn-primary">Réserver</a>
+                          </div>
+                    </div>
+                </div>
+        </div> 
+    </div>
+       
+
+    </section>
+       
+    
+
+    <footer>
+     <section>
+            <div class="container-fluid"> 
+                <div class="row text-center"> 
+                    <div class="col-lg-4 col-md-4 col-sm-4"><p>Site web : Les voyages du mondes<br><a href="mailto:Holia@lesvoyagesdumonde">holia@lesvoyagesdumonde</a></p></div>
+                    <div class="col-lg-4 col-md-4 col-sm-4"><p>Nous contacter au 514-589-1562</p><a id="number"></a></div>
+                    <div class="col-lg-4 col-md-4 col-sm-4"><p>Nos conditions</p></div>
+                </div>
+            </div>
+
+            <div class="container-fluid">
+                <div class="row text-center">
+                    <div class="col-4 col-sm-3" class="img-fluid"><i class="fas fa-plane-departure"></i></div>
+                    <div class="col-1 col-sm-2" class="img-fluid"><i class="fab fa-twitter fa-2x"></i></div>
+                    <div class="col-1 col-sm-2"><i class="fab fa-facebook-square fa-2x"></i></div>
+                    <div class="col-1 col-sm-2"><i class="fab fa-instagram fa-2x"></i></div>
+                    <div class="col-1 col-sm-2"><i class="fab fa-youtube fa-2x"></i></div>
+                </div>
+            </div>
+        </section>
+
+    </footer>
+                    <a href="index.html" class="btn btn-secondary">retour page d'acceuil</a>
+</section>
+    
+   
+
+    
+    <script src="https://kit.fontawesome.com/a46d75ba7a.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="bootstrap-4.5.3-dist/js/bootstrap.js"></script>
+</body>
+</html>
