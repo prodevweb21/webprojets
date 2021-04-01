@@ -1,0 +1,98 @@
+<!--index.html-->
+<!--Programmé par : Rachida-->
+<!--Dernière modification : 28/03/2021-->
+
+<!DOCTYPE html>
+<html lang="fr-ca">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="bootstrap-4.5.3-dist/css/bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="css/style5.css">
+
+</head>
+
+<body>
+
+
+    <!--Menu entête-->
+
+
+    <section> 
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                
+                <div class="col-2"><img src="img/téléchargement (1).jpg" class="img-fluid" alt="logo" width="70rem" height="70rem"></div>
+    
+                
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
+                        aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                        <i class="fas fa-suitcase"></i>
+                </button>
+    
+                <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                    <div class="navbar-nav mx-auto navbar-light bg-light">
+                        <a class="nav-item nav-link active" href="calculatrice.html">Calculatrice<span class="sr-only">(current)</span></a>
+                        <a class="nav-item nav-link" href="apropos.html">À propos</a>
+                        <a class="nav-item nav-link" href="login.html">login</a>
+                        <a class="nav-item nav-link" href="registre.html">Register</a>
+                        <a class="nav-item nav-link active" href="contact.html">Nous contacter</a>
+                    </div>
+                </div>
+
+    </section>
+
+
+    <section>
+            <div class="container-fluid">
+                <div class="row text-center">
+                    <div class="col-lg-12">
+                    <h3>Merveille bougie inc</h3>
+                </div>
+            </div>
+
+                            <script>
+
+                                var operateur = prompt('Entrer un operateur ( either +, -, * or / ): ');
+
+                                var numero1 = parseFloat(prompt('Entrer le 1er nombre: '));
+                                var numero2 = parseFloat(prompt('Entrer le 2e nombre: '));
+
+                                var result;
+
+                                if (operateur == '+') {
+                                    result = numero1 + numero2;
+                                }
+                                else if (operateur == '-') {
+                                    result = numero1 - numero2;
+                                }
+                                else if (operateur == '*') {
+                                    result = numero1 * numero2;
+                                }
+                                else {
+                                    result = numero1 / numero2;
+                                }
+
+                                console.log(`${numero1} ${operateur} ${numero2} = ${result}`);
+
+
+
+
+
+                            </script>
+                    
+                    
+            
+    </section>
+
+
+
+    
+    
+
+
+    <script src="https://kit.fontawesome.com/a46d75ba7a.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="bootstrap-4.5.3-dist/js/bootstrap.js"></script>
+</body>
+</html>
