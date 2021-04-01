@@ -1,0 +1,177 @@
+<!--index.html-->
+<!--Programmé par : Rachida-->
+<!--Dernière modification : 28/03/2021-->
+
+<!DOCTYPE html>
+<html lang="fr-ca">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="bootstrap-4.5.3-dist/css/bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="css/style2.css">
+
+</head>
+
+<body>
+
+
+    <!--Menu entête-->
+
+
+    <section> 
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                
+                <div class="col-2"><img src="img/téléchargement (1).jpg" class="img-fluid" alt="logo" width="70rem" height="70rem"></div>
+    
+                
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
+                        aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                        <i class="fas fa-suitcase"></i>
+                </button>
+    
+                <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                    <div class="navbar-nav mx-auto navbar-light bg-light">
+                        <a class="nav-item nav-link active" href="calculatrice.html">Calculatrice<span class="sr-only">(current)</span></a>
+                        <a class="nav-item nav-link" href="apropos.html">À propos</a>
+                        <a class="nav-item nav-link" href="login.html">login</a>
+                        <a class="nav-item nav-link" href="registre.html">Register</a>
+                         <a class="nav-item nav-link active" href="#">Nous contacter</a>
+                    </div>
+                </div>
+
+    </section>
+
+
+
+    <div class="container-fluid"> 
+            
+        <h3>Formulaire de contact</h3>
+        <!-- champ pour la saisie du nom -->
+        <div class="col-lg-6"> 
+        <label for="nom"><h5>Nom</h5></label>
+        <input type="text" id="nom" name="nom" placeholder=" Nom">
+        </div><br>
+
+        <!-- champ pour la saisie du prenom -->
+        <div class="col-lg-6"> 
+            <label for="prenom"><h5>prenom</h5></label>
+            <input type="text" id="prenom" name="prenom" placeholder=" prenom">
+            </div><br>
+
+
+        <!-- champ pour la saisie de l'adresse courriel -->
+        <div class="col-lg-6">  
+        <label for="email"><h5>Adresse courriel</h5></label>
+        <input type="text" id="email" name="email" placeholder="razoug@gmail.com">
+        </div><br> 
+
+        <!-- selecteur de sujet à choisir -->
+        <div class="col-lg-6"><h5>Faire votre choix de sujet</h5>
+        <select id="array" class="custom-select"></select>
+        </div>
+        <br>
+
+        <!-- commentaires supplémentaires -->
+        <div class="col-lg-6"> 
+            <div class="form-group">
+                <label for="Commentaire/Spécification"><h5>Commentaire/Spécification</h5></label>
+                <textarea class="form-control" id="commentaire" rows="3">Nous vous contacterons dans les 24h. Merci!</textarea>
+             </div>
+        </div><br>
+        <button>
+            <input type="submit" value="Login" class="btn" onClick="login()" /></td>
+        </button>
+                    </div> 
+                </div>
+            </div>
+    </div>  
+            
+
+        <script>
+                        // validation de l'adresse courriel, du nom et du prenom.
+
+
+                        function login()
+                                {
+                                    var nom = document.getElementById("nom").value;
+                                    var prenom = document.getElementById("prenom").value;
+                                    var email = document.getElementById("email").value;
+
+                                    var lettre = /^[A-Za-z]+$/;
+                                    var filter = /^([a-zA-Z0-9_\.\-])+\@(([a-zA-Z0-9\-])+\.)+([a-zA-Z0-9]{2,4})+$/;
+
+                                    if(nom=="")
+                                    {
+                                        alert("Completer votre nom.");
+                                    }
+                                    else if(!lettre.test(nom))
+                                    {
+                                        alert("Le nom doit comporter que des lettres");
+                                    }
+                                    if(prenom=="") 
+                                    {
+                                        alert("Veuillez renter le prenom");
+                                    } 
+                                    else if (!lettre.test(prenom))
+		                            {
+			                            alert("Le prénom doit comporter que des lettres");
+                                    }
+                                    if(email=="") 
+                                    {
+                                        alert("Veuillez completer le courriel");
+                                    } 
+                                    else if (!filter.test(email))
+		                            {
+			                            alert('email invalide');
+		                            }   
+                                    else
+                                    
+                                    {
+                                        
+                                        alert("Merci! enregistrement confirmé");
+                                } 
+                            }
+                                 
+                                    function click()
+                                    {
+                                        document.getElementById("nom").value="";
+                                        document.getElementById("prenom").value="";
+                                        document.getElementById("email").value="";
+
+                         }	
+
+
+                            // le dropdown-liste de choix à faire
+                                var selection = document.getElementById("array");
+                                var choix = ["Faire votre choix" , "delais de livraison" , "retour" , "information sur un produit" , "remboursement" , "personnaliser la commande"];      
+                                
+                                for(var i = 0; i < choix.length; i++){
+                                var y = choix[i];
+                                var x = document.createElement("option");
+                                x.textContent = y;
+                                x.value = y;
+                                selection.appendChild(x);
+                             }
+
+                               
+                       
+
+        </script>
+
+
+
+
+
+
+
+
+    
+    
+
+
+    <script src="https://kit.fontawesome.com/a46d75ba7a.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="bootstrap-4.5.3-dist/js/bootstrap.js"></script>
+</body>
+</html>
