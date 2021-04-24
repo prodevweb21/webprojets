@@ -1,0 +1,125 @@
+<!--index.html-->
+<!--Programmé par : Rachida-->
+<!--Dernière modification : 17/04/2021-->
+
+<!DOCTYPE html>
+<html lang="fr-ca">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="bootstrap-4.5.3-dist/css/bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    
+</head>
+<body>
+     
+    <div class="container-fluid">
+        <div class="row text-center">
+            <div class="col-lg-12">
+            <h3>Formulaire d'inscription</h3>
+         </div>
+    
+        <div class="container">
+            <div class="row">
+                    <div class="col-lg-6">
+                        <form>
+                        <label for="nom"><h6>Nom:</h6></label><br>
+                        <input type="text" id="nom" name="nom" size="40" maxlength="15" autofocus required><br>
+                    </div><br>
+
+                    <div class="col-lg-6">
+                        <label for="lieudenaissance"><h6>Lieu de naissance:</h6></label><br>
+                        <input type="text" id="lieudenaissance" name="lieudenaissance" placeholder="Lieu de naissance" size="40" maxlength="15" required><br><br>
+                    </div><br>
+
+                    <div class="col-lg-6"> 
+                        <label for="dnaissance"><h6>Date de naissance:</h6></label><br>
+                        <input type="date" id="datemax" name="datemax" placeholder="AAAA-MM-JJ" max="2019-01-01" min="2010-01-01" required><br>
+                    </div></br>
+
+                    <div class="col-lg-6">
+                        <label for="age"><h6>âge</h6></label><br>
+                        <input type="number" id="age" name="age" min="1" max="10" required><br>
+                    </div><br>
+
+     
+                    <div class="col-lg-6">
+                        <label for="taille"><h6>taille en cm</h6></label><br>
+                        <input type="number" id="taille" name="taille" placeholder="0 cm" min="1" max="200" required><br>
+                    </div><br>
+
+                    <div class="col-lg-6">
+                        <label for="poid"><h6>poids kg</h6></label><br>
+                        <input type="number" id="poid" name="poid" placeholder=" 0 kg" min="1" max="200" required><br><br>
+                    </div><br>
+
+                    
+                    <div class="col-lg-6">
+                        <label for="téléphone"><h6>Numéro de téléphone</h6></label><br>
+                        <input type="tel" id="phone" name="phone" placeholder="(9999-555--1/G)" required><br><br>
+                    </div>
+
+                    <div class="col-lg-6">    
+                        
+                        <label for="couleurs"><h6>Couleurs</h6></label>
+                        <select id="couleurs" required>
+                            <option value="couleurs">faire un choix</option>
+                            <option value="noir">noir</option>
+                            <option value="blanc">blanc</option>
+                            <option value="brun">brun</option>
+                            <option value="mixte">mixte</option>
+                        </select><br><br>
+                    </div><br>
+
+                    <div class="col-lg-6">
+                        <label for="email"><h6>Adresse courriel</h6></label><br>
+                        <input type="email" id="email" name="email" placeholder="email@gmail.com" size="25" required><br><br>
+                    </div>
+
+        
+                    <div class="col-lg-6">
+                            <label><h6>Votre animal est il vacciné?</h6>
+                            <input type="checkbox" required name="non">Non
+                            </label><br>
+                        
+                            <label>
+                            <input type="checkbox" required name="oui">Oui
+                            </label><br><br>
+                        </div><br>
+            
+                    
+                        <div class="col-lg-6">
+                        <label><h6>Votre animal est quel genre?</h6>
+                            <input type="checkbox" required name="domestique">Domestique
+                        </label><br>
+                        
+                        <label>
+                            <input type="checkbox" required name="race">Race
+                        </label><br>
+                        </div>
+      
+                        <div class="col-lg-6">
+                        <label for="photo"><h6>Ajouter des photos de votre animal</h6></label><br>
+                        <input type="file" id="files" name="files" multiple size="40" required><br><br>
+                        </div>
+
+                        <div class="col-lg-12">
+                        <input type="submit" name="soumettre" onclick="login()">
+                        </div>
+
+                        </form>
+                     </div>
+                </div>    
+           </div>
+        </div>
+       
+    
+
+
+    <script type="text/javascript" src="js/validation.js"></script>
+    <script src="https://kit.fontawesome.com/a46d75ba7a.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="bootstrap-4.5.3-dist/js/bootstrap.js"></script>
+</body>
+</html>
