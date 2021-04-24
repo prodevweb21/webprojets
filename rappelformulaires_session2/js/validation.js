@@ -4,7 +4,6 @@
 function login() {
     
     var nom = document.getElementById("nom").value;
-    var prenom = document.getElementById("prenom").value;
     var email = document.getElementById("email").value;
     var lieudenaissance = document.getElementById("lieudenaissance").value;
     var phone = document.getElementById("phone").value;
@@ -21,11 +20,7 @@ function login() {
         alert("Le nom doit comporter que des lettres alphabetiques");
     }
 
-    if (!lettre.test(prenom)) {
-        alert("Le prenom doit comporter que des lettres alphabetiques");
-        
-    } 
-    
+
     if (!lettre.test(lieudenaissance)) {
             alert("La ville doit contenire que des lettres alphabetiques");
     } 
@@ -47,7 +42,6 @@ function login() {
 
 function click() {
             document.getElementById("nom").value="";
-            document.getElementById("prenom").value="";
             document.getElementById("lieudenaissance").value="";
             document.getElementById("email").value="";       
             document.getElementById("phone").value="";
