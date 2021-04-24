@@ -22,7 +22,7 @@ function login() {
 
 
     if (!lettre.test(lieudenaissance)) {
-            alert("La ville doit contenire que des lettres alphabetiques");
+            alert("La ville doit inclure que des lettres alphabetiques");
     } 
 
     if(!evalide.test(email)){
