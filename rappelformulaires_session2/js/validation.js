@@ -1,7 +1,7 @@
 
 
 
-function login() {
+function login(){
     
     var nom = document.getElementById("nom").value;
     var email = document.getElementById("email").value;
@@ -19,8 +19,7 @@ function login() {
     if (!lettre.test(nom)) {
         alert("Le nom doit comporter que des lettres alphabetiques");
     }
-
-
+    
     if (!lettre.test(lieudenaissance)) {
             alert("La ville doit inclure que des lettres alphabetiques");
     } 
