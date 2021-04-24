@@ -31,7 +31,10 @@ function login(){
     if(!tvalide.test(phone)){
         alert("Le numéro de téléphone n'est pas valide")
     }
+
+    
 }
+
 
        
 
