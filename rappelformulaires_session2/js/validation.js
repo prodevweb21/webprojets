@@ -17,11 +17,14 @@ function login(){
 
 
     if (!lettre.test(nom)) {
-        alert("Le nom doit comporter que des lettres alphabetiques");
+        alert("Le nom ne doit comporter que des lettres");
     }
-    
-    if (!lettre.test(lieudenaissance)) {
-            alert("La ville doit inclure que des lettres alphabetiques");
+
+    if (lieudenaissance == "") {
+        alert("Veuillez completer le champs");
+
+    }else if (!lettre.test(lieudenaissance)) {
+            alert("Seuls les lettres sont permises");
     } 
 
     if(!evalide.test(email)){
@@ -30,13 +33,13 @@ function login(){
 
     if(!tvalide.test(phone)){
         alert("Le numéro de téléphone n'est pas valide")
-    }
-
+    } 
+    
     
 }
 
 
-       
+  
 
 
 
