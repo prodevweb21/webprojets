@@ -1,0 +1,11 @@
+.container-menu {
+  margin: 5rem;
+  text-align: center;
+}
+
+.btn btn-light rounded-circle {
+  display: inline-block;
+  position: relative;
+  margin: right 4px;
+  background-color: blue;
+}
