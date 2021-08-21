@@ -17,18 +17,20 @@
     <link rel="stylesheet" href="css/navigation.css">
     <link rel="stylesheet" href="css/pieddepage.css">
     <link rel="stylesheet" href="css/publicite.css">
+
+    <title>Projet Sass</title>
 </head>
 
 
-    <title>Projet Sass</title>
+    
 
     
 
-<body>
+    <body>
 
     <!-- image de fond et navbar -->
     
-    <section> 
+        <section> 
         
 
     <div class="container-fluid-bg">
@@ -69,7 +71,7 @@
         </div>
 
         </nav>
-        <br><br><br><br>
+       
 
 
                 <div class="text-fond">
@@ -94,6 +96,7 @@
             <button type="button" class="btn btn-light rounded-circle">Uncategorized</button>
               </div>
         </div>
+    </div>
           
         
     </section>
@@ -124,11 +127,10 @@
 
 
                 
-         <div class="col-lg-4 col-md-4 col-sm-4"><div class="card"><div class="card-head"><div id="myCarousel" class="carousel slide" data-ride="carousel">
-                    <ul class="carousel-indicators">
+         <div class="col-lg-4 col-md-4 col-sm-4"><div class="card"><div class="card-head"><div id="myCarousel" class="carousel slide" data-ride="carousel"><ul class="carousel-indicators">
                             <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
                             <li data-target="#myCarousel" data-slide-to="1"></li>
-                            <li data-target="#myCarousel" data-slide-to="2"></li>
+                            <li data-target="#myCarousel" data-slide-to="2"></li> 
                     </ul>
                     <div class="carousel-inner">
                             <div class="carousel-item active">
@@ -180,75 +182,85 @@
     
 
 
+
+
+                <!-- card 1-2 & publicité -->
+            
+            <section>
+
         <div class="row">
-            <div class="col-lg-4 col-md-4 col-sm-4"><div class="card"><div class="card-head"><img class="img-flex" src="https://cdn.jevelin.shufflehound.com/wp-content/uploads/sites/11/2016/11/3-1024x817.jpg" alt="robot" width="400">
-                <h5>by shufflehound November 23, 2016</h5>
-                <h3>Trip that you'll never ever forget</h3>
-                       <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis sint perspiciatis
-                          deleniti ab possimus ut? Ducimus fugiat hic velit necessitatibus. Lorem ipsum dolor
-                          sit amet consectetur adipisicing elit. Repellendus sapiente harum soluta excepturi ut
-                          temporibus, at amet corporis id asperiores.</p>
+            <div class="col-lg-4 col-md-4 col-sm-4">
+                <div class="card">
+                    <div class="card-head"><img class="img-flex" src="https://cdn.jevelin.shufflehound.com/wp-content/uploads/sites/11/2016/11/3-1024x817.jpg" alt="robot" width="400">
+                        <h5>by shufflehound November 23, 2016</h5>
+                        <h3>Trip that you'll never ever forget</h3>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis sint perspiciatis
+                                deleniti ab possimus ut? Ducimus fugiat hic velit necessitatibus. Lorem ipsum dolor
+                                sit amet consectetur adipisicing elit. Repellendus sapiente harum soluta excepturi ut
+                                temporibus, at amet corporis id asperiores.</p><hr>
+                                <h3>People, travel</h3>
+                    </div>
+                </div>
+            </div>
 
-                               <hr>
 
-                               <h3>People, travel</h3>
+            <div class="col-lg-4 col-md-4 col-sm-4">
+                <div class="card">
+                    <div class="card-head"><img class="img-flex" src="https://cdn.jevelin.shufflehound.com/wp-content/uploads/sites/11/2016/11/4-790x1024.jpg" alt="artisanal" width="400">
+                        <h5>by shufflehound November 23, 2016</h5>
+                        <h3>Trip that you'll never ever forget</h3>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis sint perspiciatis
+                                deleniti ab possimus ut? Ducimus fugiat hic velit necessitatibus. Lorem ipsum dolor
+                                sit amet consectetur adipisicing elit. Repellendus sapiente harum soluta excepturi ut
+                                temporibus, at amet corporis id asperiores.</p><hr>
+                                <h3>People, travel</h3>
                     </div>
                 </div><br><br>
             </div>
 
+           
+            
+                        <div class="col-lg-4 col-md-4 col-sm-4">
+                                    <div class="card">
+                                        <div class="card-ads"><img class="img-flex" src="./img/tube.png" alt="tube"></div
+                                            Advertissement
+                                            <hr>
+                                            custom Vertical Height
+                                        </div>
 
-            <div class="col-lg-4 col-md-4 col-sm-4"><div class="card"><div class="card-head"><img class="img-flex" src="https://cdn.jevelin.shufflehound.com/wp-content/uploads/sites/11/2016/11/4-790x1024.jpg" alt="artisanal" width="400">
-                <h5>by shufflehound November 23, 2016</h5>
-                <h3>Trip that you'll never ever forget</h3>
-                       <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis sint perspiciatis
-                          deleniti ab possimus ut? Ducimus fugiat hic velit necessitatibus. Lorem ipsum dolor
-                          sit amet consectetur adipisicing elit. Repellendus sapiente harum soluta excepturi ut
-                          temporibus, at amet corporis id asperiores.</p>
-
-                               <hr>
-
-                               <h3>People, travel</h3>
-                </div>
-              </div><br><br>
-            </div>
-
-            <section>
-
-            <!-- publicité -->
-                <div class="col-lg-4 col-md-4 col-sm-4"><div class="card"><div class="card-ads"><img class="img-flex" src="./img/tube.png" alt="tube"></div>
-                    Advertissement
-                    <hr>
-                    custom Vertical Height
-                    
-                </div><br><br>
-
-                <label for="site-search"></label>
-                <input type="search" id="site-search" name="q">
-                <button>Search</button>
+                                <!-- icon pub -->
+                                    <label for="site-search"></label>
+                                    <input type="search" id="site-search" name="q">
+                                    <button>Search</button><br><br>
 
 
-                <br><br>
+                            <h5>Popular Tags</h5><br>
+                                <button type="button" class="btn btn-dark">BIKE</button>
+                                <button type="button" class="btn btn-dark">BUILDING</button>
+                                <button type="button" class="btn btn-dark">CAMERA</button>
+                                <button type="button" class="btn btn-dark">CRAFT</button>
+                                <button type="button" class="btn btn-dark">GEAR</button>
+                                <button type="button" class="btn btn-dark">MOVIEK</button>
+                                <button type="button" class="btn btn-dark">NOTEBOO</button>
+                                <button type="button" class="btn btn-dark">OFFICE</button>
+                                <button type="button" class="btn btn-dark">STORMTROOPER</button>
+                                <button type="button" class="btn btn-dark">SWIMMING</button>
+                                <button type="button" class="btn btn-dark">TROOPER</button>
 
-                <h5>Popular Tags</h5><br>
-                    <button type="button" class="btn btn-dark">BIKE</button>
-                    <button type="button" class="btn btn-dark">BUILDING</button>
-                    <button type="button" class="btn btn-dark">CAMERA</button>
-                    <button type="button" class="btn btn-dark">CRAFT</button>
-                    <button type="button" class="btn btn-dark">GEAR</button>
-                    <button type="button" class="btn btn-dark">MOVIEK</button>
-                    <button type="button" class="btn btn-dark">NOTEBOO</button>
-                    <button type="button" class="btn btn-dark">OFFICE</button>
-                    <button type="button" class="btn btn-dark">STORMTROOPER</button>
-                    <button type="button" class="btn btn-dark">SWIMMING</button>
-                    <button type="button" class="btn btn-dark">TROOPER</button>
-
-            </div>
-        </div><br><br>
+                    </div>
+    </div><br><br>
       
-    </section>
+
+</section>
 
 
-        <!-- catégories -->
+
+
+
+
+
+        <!-- card 3/4/5/6/7/8 -->
+        <section>
 
 
         <div class="row">
@@ -432,6 +444,8 @@
       </section>
 
 
+      <!-- Footer -->
+      <section>
       <footer>
 
                 <div class="container-fluid" id="footer">
@@ -492,15 +506,16 @@
 
 
       </footer>
+    </section>
 
 
 
 
 
 
-    <script src="https://kit.fontawesome.com/a46d75ba7a.js"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    <script src="bootstrap-4.5.3-dist/js/bootstrap.js"></script>
+                <script src="https://kit.fontawesome.com/a46d75ba7a.js"></script>
+                <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+                <script src="bootstrap-4.5.3-dist/js/bootstrap.js"></script>
 
-</body>
+    </body>
 </html>
