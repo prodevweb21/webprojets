@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Roche Papier Ciseaux</title>
+</head>
+<body>
+    <button>Roche</button>
+    <button>Papier</button>
+    <button>Ciseaux</button>
+    <div id="result"></div>
+    <script>
+        const buttons = document.querySelectorAll("button");
+        // console.log(buttons);
+        for (let i = 0; i < buttons.length; i++) {
+            buttons[i].addEventListener("click", function(){
+        // console.log("fonctionne")
+            const choixDeLUtilisateur = buttons[i].innerHTML
+            console.log(choixDeLUtilisateur);
+
+            })
+            
+        }
+
+    </script>
+
+</body>
+</html>
